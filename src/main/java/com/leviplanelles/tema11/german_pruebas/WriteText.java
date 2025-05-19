@@ -1,7 +1,6 @@
-package com.leviplanelles.tema11;
+package com.leviplanelles.tema11.german_pruebas;
 
 import java.io.File;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -16,7 +15,7 @@ public class WriteText {
         String texto = args[0];
         File file = new File(FILE_PATH);
 
-        try (FileWriter fw = new FileWriter(file,file.exists())){
+        try (FileWriter fw = new FileWriter(file)){
             fw.write(texto);
         } catch (IOException e) {
             System.out.println("El archivo no existe");
