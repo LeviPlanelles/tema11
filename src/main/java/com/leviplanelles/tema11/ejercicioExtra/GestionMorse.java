@@ -31,6 +31,7 @@ public class GestionMorse {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+        return file;
     }
 
     public File crearArchivoMorseAPartirDeOtroNormal(File file) {
